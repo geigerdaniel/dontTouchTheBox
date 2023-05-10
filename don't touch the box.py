@@ -19,7 +19,7 @@ dotYLength = 20
 whiteDot = pygame.transform.scale(originalWhiteDot, (dotXLength, dotYLength))
 dotXPosition = 0
 dotYPosition = 0
-initialXPosition = 0]
+initialXPosition = [0]
 initialYPosition = [0]
 
 clock = pygame.time.Clock()
@@ -48,7 +48,7 @@ while True:
                 timerRunning = True
                 targetTime = time.time() + 3  # set the target time for the timer
                 canCheckForDirection = False
-                initialXPosition = const dotXPosition
+                initialXPosition = dotXPosition
                 initialYPosition = frozenset([dotYPosition])
 
 
